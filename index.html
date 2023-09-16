@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index-script.js"></script>
+    <title>BienveniDogs</title>
+  </head>
+  <body>
+    <header id="header" data-bs-theme="dark">
+      <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4>Sobre el proyecto</h4>
+              <p class="text-body-secondary">
+                Actividad 11.1.1 del curso de Desarrollo Web de Jovenes a
+                Programar sobre el consumo de APIs. Se utilizó la Dog API para
+                mostrar imágenes de perros, las cuales pueden ser filtradas por
+                raza.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4>Información relevante</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Dog API</a></li>
+                <li>
+                  <a href="#" class="text-white">Plantilla de Bootstrap</a>
+                </li>
+                <li><a href="#" class="text-white">GitHub del proyecto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="me-2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>BienveniDogs</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <!--Welcome section-->
+      <section class="py-5 text-center container" id="heroe-section" >
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">¡BienveniDogs!</h1>
+            <p class="lead text-body-secondary">
+              A continuación podrás ver muchas perritos, y si quieres, puedes
+              filtrarlos por raza.
+            </p>
+            <p>
+              <button class="btn btn-primary my-2" id="seeDogsButton">Ver perritos</button>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Search bar-->
+      <div class="input-group search-bar-container" >
+        <select class="form-select" id="inputGroupSelect04">
+          <option selected value="random">Buscar por raza...</option>
+        </select>
+        <button class="btn btn-outline-secondary" type="button" id="searchBreed">Buscar</button>
+      </div>
+      <!--Album-->
+      <div class="album py-5 bg-body-tertiary main-container">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="dogContainer">
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-8 mx-auto text-center">
+            <p class="seeMoreDogsButton-p">
+                <button class="btn btn-primary my-2" id="seeMoreDogsButton">Ver más</button>
+            </p>
+        </div>
+      </div>
+    <!-- Footer -->
+    <footer id="footer" class="text-body-secondary py-3" data-bs-theme="dark">
+      <div class="container">
+        <p class="text-center">
+          Rocío Pallas, grupo 259, Desarrollo Web JaP 2023
+        </p>
+        <p class="text-center">
+          <a href="#heroe-section">Volver al inicio</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
